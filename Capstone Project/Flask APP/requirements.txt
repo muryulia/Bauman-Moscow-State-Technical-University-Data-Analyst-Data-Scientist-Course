@@ -1,0 +1,6 @@
+Flask
+pickle-mixin
+sklearn==0.0
+numpy
+gunicorn
+scikit-learn==1.0.2

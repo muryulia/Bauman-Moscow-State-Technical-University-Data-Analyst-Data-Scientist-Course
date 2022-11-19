@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<style>
+    :root {
+	--primary: #56cfe1;
+	--progress-bar-color: #56cfe1;
+}
+    body {
+	background-color: #fff;
+	font-family: Poppins;
+	font-size: 14px;
+	line-height: 1.75;
+	color: #878787;
+	font-weight: 400;
+	width: 100%;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+    margin: 20px;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+    p {
+	margin-bottom: 0em;
+    font-size: 20px;
+    line-height: 1.5em;
+  }
+
+  label {
+    font-size: 14px;
+  }
+
+  h3 {
+	font-size: 24px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: .65em 0 .5em;
+}
+
+h1, h2, h3, h4, h5, h6, .f__mont, .f_heading, .h3 {
+	font-weight: 600;
+	color: #222;
+	letter-spacing: 0px;
+	line-height: 1.428;
+}
+
+#nt_wrapper {
+	overflow: hidden;
+	background-color: #fff;
+    margin: 0 auto;
+	max-width: 1200px;
+	-webkit-box-shadow: 0 1px 9px rgba(0,0,0,.08);
+	box-shadow: 0 1px 9px rgba(0,0,0,.08);
+}
+
+#ntheader {
+	position: relative;
+}
+
+.wrapper_boxed #ntheader .ntheader_wrapper, .wrapper_boxed.h_transparent_true.template-index #ntheader .ntheader_wrapper {
+	left: auto;
+	right: auto;
+	width: 100vw;
+	max-width: 1200px;
+}
+
+#ntheader .ntheader_wrapper {
+	position: relative;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 390;
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+}
+
+h__top, .h__top.bgbl {
+	background-color: #f6f6f8;
+	}
+
+.h__top {
+	min-height: 141px;
+	}
+
+.fl_center {
+	justify-content: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	-ms-justify-content: center;
+}
+
+
+.flex {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.bgbl {
+	background: #f6f6f8;
+}
+
+.pb__10 {
+	padding-bottom: 10px;
+}
+
+.pt__10 {
+	padding-top: 10px;
+}
+
+.wrapper_cus .container, .wrapper_cus #ntheader .container, .wrapper_cus .caption-w-1, .wrapper_boxed .container, .wrapper_boxed #ntheader .container, .wrapper_boxed .caption-w-1 {
+	max-width: 1420px;
+}
+
+.container {
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.al_center {
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.tc {
+	text-align: center;
+}
+
+.row {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin-right: 15px;
+	margin-left: 15px;
+}
+
+.col, .col-1, .col-10, .col-11, .col-12, .col-15, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-15, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-15, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-nt-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+	padding-right: 15px;
+	padding-left: 15px;
+    position: relative;
+	width: 100%;
+}
+
+.tl_lg {
+	text-align: left;
+}
+
+.col-lg-4 {
+	-ms-flex: 0 0 50%;
+	flex: 0 0 50%;
+	max-width: 50%;
+}
+
+.section-title {
+	font-size: 34px;
+	font-weight: 600;
+	color: #222;
+	margin: 0;
+}
+
+footer, header, section {
+	display: block;
+}
+
+*, ::after, ::before {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#nt_content {
+	min-height: 50vh;
+}
+
+.mb__100 {
+	margin-bottom: 100px;
+}
+
+.mb__20 {
+	margin-bottom: 20px;
+}
+
+.mt__100 {
+	margin-top: 100px;
+}
+
+.col-md-6 {
+	-ms-flex: 0 0 50%;
+	flex: 0 0 50%;
+	max-width: 50%;
+}
+
+input:not([type="submit"]):not([type="checkbox"]), select, textarea {
+	border: 1px solid #ccc;
+	font-size: 13px;
+	outline: 0;
+	padding: 0 15px;
+	color: #878787;
+	border-radius: 0;
+	max-width: 100%;
+}
+
+input[type="date"], input[type="email"], input[type="number"], input[type="password"], input[type="number"], input[type="text"], input[type="url"], select, textarea {
+	width: 100%;
+	height: 40px;
+	line-height: 18px;
+	transition: border-color .5s;
+	box-shadow: none;
+	border-radius: 0;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.button, button, input[type="button"], input[type="reset"], input[type="submit"] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+a.button, button, input[type="submit"] {
+	cursor: pointer;
+	border: 2px solid #222;
+	padding: 5px 25px;
+	min-width: 130px;
+	background-color: #56cfe1;
+	color: #fff;
+	border-radius: 40px;
+	font-size: 14px;
+	font-weight: 600;
+	min-height: 40px;
+}
+
+.w__100 {
+	width: 100%;
+}
+
+.bgbl {
+	background: #f6f6f8;
+}
+
+
+
+/*
+form{
+    margin: auto;
+    width:35%;
+}
+*/
+
+.result {
+margin:auto;
+width: 35%;
+border: 1px solid #ccc;
+}
+</style>
+
+<head>
+    <title>Прогноз глубины и ширины сварного шва</title>
+</head>
+<body>
+    <div id="nt_wrapper">
+        <header id="ntheader" style="height: 180px;">
+            <div class="ntheader_wrapper">
+                <div class="h__top bgbl pt__10 pb__10 fs__12 flex fl_center al_center">
+                    <div class="container">
+                        <div class="header-text">
+                            <h3 class="section-title tc pr flex fl_center al_center fs__24 title_9">
+                                <span class="mr__10 ml__10">Прогнозирование размеров сварного шва <br>при электронно-лучевой сварке тонкостенных конструкций аэрокосмического назначения</span>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             
+        </header>
+        <div id="nt_content">
+            <div class="container mb__100">
+                <div class="row fl_center mb__20">
+    <p>
+        Модель прогнозирует параметры глубины и ширины сварного шва с помощью модели машинного обучения, основанной на регрессии с помощью градиентного бустинга.
+        Модель градиентного бустинга предсказывает одновременно две переменные: глубину сварного шва и его ширину с помощью метода MultiOutputRegressor.
+</p>
+<p>
+    Для оценки качества модели использовался коэффициент детерминации или R<sup>2</sup>.
+    Согласно метрике, показатель качества модели составил 0,94 для глубины шва и 0,95 для ширины шва.
+    Средняя оценка качества для двух метрик на кросс-валидации составила 0,96 на тренировочном наборе данных и 0,92 на тестовом наборе данных.
+</p>
+
+<p>
+    Модель является частью итогового проекта, выполненного в рамках курса Аналитик данных (Data Scientist) от МГТУ им. Баумана.
+</p>
+
+<p>
+    Пожалуйста, введите параметры процесса сварки в форму ниже, чтобы получить прогноз глубины и ширины сварного шва.
+    
+        </p>
+    </div>
+    <div class="row fl_center">
+
+        <div class="contact-form col-12 col-md-6 mb__20">
+            <form method="post" action="{{url_for('main')}}" id="contact_form_page" class="contact-form">
+            
+            <h3 class="mb__20">Введите исходные значения, чтобы получить прогноз</h3>
+                       <p class="mb__20">
+                           <label for="IW">Величина сварочного тока (IW)</label>
+                           <input required="required" name = "IW" type="number" step="any" id="IW" value="">
+                       </p>
+                       <p class="mb__20">
+                           <label for="IF">Ток фокусировки электронного пучка (IF)</label>
+                           <input required="required" name = "IF" type="number" step="any" id="IF" value="">
+                        </p>
+                        <p class="mb__20">
+                       <label for="VW">Скорость сварки (VW)</label>
+                       <input required="required" name = "VW" type="number" step="any" id="VW" value="">
+                       </p>
+                       <p class="mb__20">
+                       <label for="FP">Расстояние от поверхности образцов до электронно-оптической системы (FP)</label>
+                       <input required="required" name = "FP" type="number" step="any" id="FP" value="">
+                       </p>
+                       <input type="submit" class="button w__100" value="Отправить">
+            </form>
+            </div>
+    
+{% if result %}
+<div class="result" align="center">
+
+<br>
+<p style="font-size: 24px">
+Прогнозные значения глубины и ширины сварного шва: 
+</p>
+<p style="font-size: 50px">
+{{result}} 
+</p>
+
+</div>
+{% endif %}
+</div>
+</div>  
+</div>
+<footer id="nt_footer" class="bgbl footer-1">
+    <div class="container pr z_100">
+        <div class="row">
+            <p style="font-size: 14px">Автор проекта: Юлия Муртазина. Ноябрь, 2022 </p>
+
+</div>  
+</div>
+</footer>
+
+
+</div>
+</body>

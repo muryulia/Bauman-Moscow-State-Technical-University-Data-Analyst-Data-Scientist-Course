@@ -23,3 +23,6 @@ Also, two neural networks were used for evaluation: a multilayer perceptron and 
 After that, the models were trained and the quality of their predictions was checked by cross-validation. As a result of the evaluation, a GradientBoosting Regressor model with a MultiOutputRegressor was chosen for subsequent deployment as a Flask application. The values of the coefficient of determination for the selected model: 0.94 for the depth of the joint and 0.95 for the width of the joint. The average quality score for the two metrics on cross-validation was 0.96 on the training dataset and 0.92 on the test dataset.
 
 Link to the Flask APP: https://mur-welding.herokuapp.com/
+
+Link to the Colab Notebook: https://colab.research.google.com/drive/156264nKYHCpdWsj1zLWJ1OTRZnlNOlrz
+

@@ -22,7 +22,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
     p {
-	margin-bottom: 0em;
+	margin-bottom: 1.0em;
     font-size: 20px;
     line-height: 1.5em;
   }
@@ -262,17 +262,17 @@ border: 1px solid #ccc;
 </style>
 
 <head>
-    <title>Прогноз глубины и ширины сварного шва</title>
+    <title>Prediction of Depth and Width of the Welded Joint</title>
 </head>
 <body>
     <div id="nt_wrapper">
-        <header id="ntheader" style="height: 180px;">
+        <header id="ntheader" style="height: 144.267px;">
             <div class="ntheader_wrapper">
                 <div class="h__top bgbl pt__10 pb__10 fs__12 flex fl_center al_center">
                     <div class="container">
                         <div class="header-text">
                             <h3 class="section-title tc pr flex fl_center al_center fs__24 title_9">
-                                <span class="mr__10 ml__10">Прогнозирование размеров сварного шва <br>при электронно-лучевой сварке тонкостенных конструкций аэрокосмического назначения</span>
+                                <span class="mr__10 ml__10">Depth and Width of the Welded Joint: <br>Forecasting Model</span>
                             </h3>
                         </div>
                     </div>
@@ -284,22 +284,15 @@ border: 1px solid #ccc;
             <div class="container mb__100">
                 <div class="row fl_center mb__20">
     <p>
-        Модель прогнозирует параметры глубины и ширины сварного шва с помощью модели машинного обучения, основанной на регрессии с помощью градиентного бустинга.
-        Модель градиентного бустинга предсказывает одновременно две переменные: глубину сварного шва и его ширину с помощью метода MultiOutputRegressor.
-</p>
+The model predicts parameters of depth and width of a welded joint by applying the machine learning method of Gradient Boosting Regressor.
+The Gradient Boosting predicts two variables at a time by using MultiOutputRegressor.</p>
 <p>
-    Для оценки качества модели использовался коэффициент детерминации или R<sup>2</sup>.
-    Согласно метрике, показатель качества модели составил 0,94 для глубины шва и 0,95 для ширины шва.
-    Средняя оценка качества для двух метрик на кросс-валидации составила 0,96 на тренировочном наборе данных и 0,92 на тестовом наборе данных.
-</p>
+We used the R-squared metric to evaluate forecasting accuracy.
+The metric returns 0.94 for the depth of the joint and 0.95 for the width of the joint, and its mean cross-validation score for two targets is 0.96 on the train set and 0.92 on the test set.</p>
 
-<p>
-    Модель является частью итогового проекта, выполненного в рамках курса Аналитик данных (Data Scientist) от МГТУ им. Баумана.
-</p>
+<p>The model is a part of a capstone project for the Data Analyst (Data Scientist) Course by Bauman Moscow State Technical University.</p>
 
-<p>
-    Пожалуйста, введите параметры процесса сварки в форму ниже, чтобы получить прогноз глубины и ширины сварного шва.
-    
+<p>Please enter the welding process parameters in the form below to make a forecast of depth and width of the welded joint.
         </p>
     </div>
     <div class="row fl_center">
@@ -307,24 +300,24 @@ border: 1px solid #ccc;
         <div class="contact-form col-12 col-md-6 mb__20">
             <form method="post" action="{{url_for('main')}}" id="contact_form_page" class="contact-form">
             
-            <h3 class="mb__20">Введите исходные значения, чтобы получить прогноз</h3>
+            <h3 class="mb__20">Enter the initial values to get a forecast</h3>
                        <p class="mb__20">
-                           <label for="IW">Величина сварочного тока (IW)</label>
+                           <label for="IW">Welding Current (IW)</label>
                            <input required="required" name = "IW" type="number" step="any" id="IW" value="">
                        </p>
                        <p class="mb__20">
-                           <label for="IF">Ток фокусировки электронного пучка (IF)</label>
+                           <label for="IF">Focus Current (IF)</label>
                            <input required="required" name = "IF" type="number" step="any" id="IF" value="">
                         </p>
                         <p class="mb__20">
-                       <label for="VW">Скорость сварки (VW)</label>
+                       <label for="VW">Welding Speed (VW)</label>
                        <input required="required" name = "VW" type="number" step="any" id="VW" value="">
                        </p>
                        <p class="mb__20">
-                       <label for="FP">Расстояние от поверхности образцов до электронно-оптической системы (FP)</label>
+                       <label for="FP">Sample Surface to Electron Optics Distance (FP)</label>
                        <input required="required" name = "FP" type="number" step="any" id="FP" value="">
                        </p>
-                       <input type="submit" class="button w__100" value="Отправить">
+                       <input type="submit" class="button w__100" value="Submit">
             </form>
             </div>
     
@@ -333,7 +326,7 @@ border: 1px solid #ccc;
 
 <br>
 <p style="font-size: 24px">
-Прогнозные значения глубины и ширины сварного шва: 
+The Predicted Depth and Width of the Welded Joint: 
 </p>
 <p style="font-size: 50px">
 {{result}} 
@@ -347,7 +340,7 @@ border: 1px solid #ccc;
 <footer id="nt_footer" class="bgbl footer-1">
     <div class="container pr z_100">
         <div class="row">
-            <p style="font-size: 14px">Автор проекта: Юлия Муртазина. Ноябрь, 2022 </p>
+            <p style="font-size: 14px">Created by: Yuliya Murtazina, November, 2022 </p>
 
 </div>  
 </div>
